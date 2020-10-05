@@ -35,8 +35,6 @@ request.post('https://api37.realtor.ca/Listing.svc/PropertySearch_Post',
                         var listing = JSON.parse(body);
                         // console.log(listing);
                         details.push(listing);
-                        console.log(details);
-
                     }catch(e){
 
                     }
