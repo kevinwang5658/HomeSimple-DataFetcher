@@ -41,6 +41,16 @@ async function getPage(number) {
                     PropertySearchTypeId: 1,
                     HashCode: 0,
                     CurrentPage: parseInt(number),
+                    ZoomLevel: 11,
+                    LatitudeMax: 43.90135,
+                    LongitudeMax: -79.05332,
+                    LatitudeMin: 43.51420,
+                    LongitudeMin: -79.69945,
+                    PriceMin: 100000,
+                    PriceMax: 1500000,
+                    Sort: "6-D",
+                    PropertyTypeGroupID: 1,
+                    TransactionTypeId: 2,
                 }},
             (err, httpResponse, body) => {
                 const json = JSON.parse(body).Results;
@@ -49,9 +59,28 @@ async function getPage(number) {
     })
 }
 
-function writeCsv(json) {
-    const csv = parser.parse(json);
+function writeCsv(json, showHeaders) {
+    const formatted = json.map((u) => {
+        return {
+            MlsNumber: u.MlsNumber,
+            PublicRemarks: u.PublicRemarks,
+            Bathrooms: u.Building.BathroomTotal,
+            Bedrooms: u.Building.Bedrooms,
+            InteriorSize: u.Building.SizeInterior,
+            Type: u.Building.Type,
+            Ammenities: u.Building.Ammenities,
+            Address: u.Property.AddressText,
+            Price: u.Property.ConvertedPrice,
+            PropertyType: u.Property.Type,
+            ParkingSpace: u.Property.ParkingSpaceTotal,
+            OwnershipType: u.Property.OwnershipType,
+            PostalCode: u.PostalCode,
+        };
+    });
+
+    const csv = parser.parse(formatted);
     ws.write(csv);
+    //console.log(json);
 }
 
 function getDetails(propertyIds) {
@@ -71,11 +100,13 @@ function getDetails(propertyIds) {
     });
 }
 
+fs.unlink('out.csv', (err) => {
+    if (err) console.log('file does not exist');
+    console.log('out.csv was deleted');
+  });
+
 for (let i=1; i < 51; i++) {
     const json = await getPage(i);
     writeCsv(json);
     console.log("Completed: " + i + " requests")
 }
-
-
-

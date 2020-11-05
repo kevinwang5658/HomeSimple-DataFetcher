@@ -1,9 +1,12 @@
 {
-  "name": "FYDP",
+  "name": "fydp",
   "type": "module",
   "version": "1.0.0",
   "dependencies": {
     "json2csv": "^5.0.3",
     "request": "^2.88.2"
+  },
+  "scripts": {
+    "start": "node fetch.js"
   }
 }
