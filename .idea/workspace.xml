@@ -20,8 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="58de8df3-9fca-4ff0-bb29-04eb5866281b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fetch.js" beforeDir="false" afterPath="$PROJECT_DIR$/fetch.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,10 +47,11 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="14.13.0" />
     <property name="javascript.nodejs.core.library.typings.version" value="14.11.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/fetch.js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path" value="wsl://UBUNTU@/home/kevinwang/.nvm/versions/node/v14.13.0/bin/node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="settings.nodejs" />
@@ -60,7 +61,7 @@
     <configuration default="true" type="NodeJSConfigurationType" path-to-js-file="fetch.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
-    <configuration name="fetch.js" type="NodeJSConfigurationType" nameIsGenerated="true" node-parameters="--experimental-modules" path-to-js-file="fetch.js" working-dir="$PROJECT_DIR$">
+    <configuration name="fetch.js" type="NodeJSConfigurationType" path-to-node="node" nameIsGenerated="true" node-parameters="--experimental-modules" path-to-js-file="fetch.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
   </component>
@@ -81,7 +82,18 @@
       <workItem from="1605220850679" duration="164000" />
       <workItem from="1605221045952" duration="425000" />
       <workItem from="1605237082708" duration="3292000" />
-      <workItem from="1605275792608" duration="5795000" />
+      <workItem from="1605275792608" duration="6428000" />
+      <workItem from="1605303838114" duration="4719000" />
+      <workItem from="1605368501602" duration="2160000" />
+      <workItem from="1605761305994" duration="830000" />
+      <workItem from="1605883987983" duration="1190000" />
+      <workItem from="1605907786665" duration="1121000" />
+      <workItem from="1606066706870" duration="741000" />
+      <workItem from="1606416767051" duration="9126000" />
+      <workItem from="1607570238077" duration="602000" />
+      <workItem from="1611775522056" duration="3995000" />
+      <workItem from="1611934741585" duration="3831000" />
+      <workItem from="1613517651937" duration="761000" />
     </task>
     <servers />
   </component>
@@ -99,51 +111,5 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="552" y="161" key="#Plugins" timestamp="1601820796696">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="552" y="161" key="#Plugins/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1601820796696" />
-    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603635893774">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1603635893774" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1601861604099">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1601861604099" />
-    <state width="1899" height="282" key="GridCell.Tab.0.bottom" timestamp="1605281589036">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1899" height="282" key="GridCell.Tab.0.bottom/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1605281589036" />
-    <state width="1899" height="282" key="GridCell.Tab.0.center" timestamp="1605281589035">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1899" height="282" key="GridCell.Tab.0.center/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1605281589035" />
-    <state width="1899" height="282" key="GridCell.Tab.0.left" timestamp="1605281589035">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1899" height="282" key="GridCell.Tab.0.left/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1605281589035" />
-    <state width="1899" height="282" key="GridCell.Tab.0.right" timestamp="1605281589035">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1899" height="282" key="GridCell.Tab.0.right/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1605281589035" />
-    <state x="461" y="165" key="SettingsEditor" timestamp="1601821019097">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="461" y="165" key="SettingsEditor/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1601821019097" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1605281609406">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1605281609406" />
-    <state x="677" y="328" key="jetbrains.nodejs.interpreters-dialog" timestamp="1601821009030">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="677" y="328" key="jetbrains.nodejs.interpreters-dialog/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1601821009030" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1601820764357">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1601820764357" />
   </component>
 </project>
