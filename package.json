@@ -3,6 +3,7 @@
   "type": "module",
   "version": "1.0.0",
   "dependencies": {
+    "fs-extra": "^9.1.0",
     "image-downloader": "^4.0.2",
     "json2csv": "^5.0.3",
     "request": "^2.88.2"

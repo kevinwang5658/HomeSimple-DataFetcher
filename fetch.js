@@ -2,6 +2,7 @@ import request from 'request';
 import { parse, Parser } from 'json2csv';
 import * as fs from 'fs'
 import * as ImageDownloader from 'image-downloader';
+import * as fsExtra from 'fs-extra'
 
 const LOCAL_LOGIC_API_KEY = "f50e4e0998d261cd78160bb80709ceb785cc18556729dd737771c0cbcb54ffd5644455cf1df300499b"
 
@@ -56,10 +57,33 @@ const MARKHAM_PARAMS  = {
     TransactionTypeId: 2,
 }
 
+const BARRIE_PARAMS  = {
+    CultureId: 1,
+    ApplicationId: 1,
+    PropertySearchTypeId: 1,
+    HashCode: 0,
+    ZoomLevel: 12,
+    LatitudeMax: 44.45603,
+    LongitudeMax: -79.50423,
+    LatitudeMin: 44.26457,
+    LongitudeMin: -79.82730,
+    PriceMin: 400000,
+    PriceMax: 650000,
+    Sort: "6-D",
+    PropertyTypeGroupID: 1,
+    TransactionTypeId: 2,
+    BedRange: "2-0",
+    BathRange: "1-0",
+    BuildingTypeId: 1,
+}
+
+
 fs.unlink('out.csv', (err) => {
     if (err) console.log('file does not exist');
     console.log('out.csv was deleted');
 });
+
+fsExtra.emptyDirSync('./images')
 
 const ws = fs.createWriteStream('out.csv', { flags: 'a' })
 const parser = new Parser({
@@ -68,7 +92,7 @@ const parser = new Parser({
 
 async function getPage(number) {
     return new Promise((resolve, reject) => {
-        const params = Object.assign(CAROLYN_PARAMS, {
+        const params = Object.assign(BARRIE_PARAMS, {
             CurrentPage: parseInt(number),
         })
         request.post('https://api37.realtor.ca/Listing.svc/PropertySearch_Post',
